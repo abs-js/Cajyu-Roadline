@@ -1,0 +1,13 @@
+import print from CajyuLibs.serial;
+
+class Person {
+  Main name {
+    Self.name = name;
+  }
+  greet {
+    return "Hello, " + Self.name;
+  }
+}
+
+var p = new Person("Alex");
+print(p.greet());

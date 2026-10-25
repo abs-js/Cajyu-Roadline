@@ -1,0 +1,6 @@
+import Server from CajyuLibs.http;
+import print from CajyuLibs.serial;
+
+var server = new Server(3000);
+print("Server running on http://localhost:3000");
+server.file("/", "<h1>Hello from Cajyu!</h1>");

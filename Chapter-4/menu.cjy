@@ -1,0 +1,9 @@
+import Server from CajyuLibs.http;
+import print from CajyuLibs.serial;
+
+var server = new Server(3000);
+print("Digital menu running at http://localhost:3000");
+
+var html = "<!DOCTYPE html><html><body><h1>Today's Menu</h1><ul><li>Pizza — $12</li><li>Salad — $8</li><li>Water — $2</li></ul></body></html>";
+
+server.file("/", html);
